@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Project 06</title>
+        <link rel="stylesheet" href="./assets/css/reset.css" />
         <link
             rel="apple-touch-icon"
             sizes="57x57"
@@ -86,10 +87,52 @@
             href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Sora:wght@400;600;700;800&display=swap"
             rel="stylesheet"
         />
-        <link rel="stylesheet" href="./assets/css/reset.css" />
         <link rel="stylesheet" href="./assets/css/styles.css" />
     </head>
     <body>
-        Hello
+        <header class="header header--sticky">
+            <div class="container">
+                <div class="header__inner">
+                    <a href="#">
+                        <img
+                            src="./assets/img/Logo.svg"
+                            alt="Logo"
+                            class="logo"
+                        />
+                    </a>
+                    <nav class="navbar">
+                        <ul class="navbar__list">
+                            <li>
+                                <a
+                                    href="#!"
+                                    class="navbar__item navbar__item--active"
+                                    >Home</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#!" class="navbar__item">About</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="navbar__item"
+                                    >Services & Rates</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#!" class="navbar__item">Reviewa</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="navbar__item">Contact Us</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header-action">
+                        <a href="#!" class="header-action_sign-in">Sign in</a>
+                        <a href="#!" class="btn header-action_sign-up"
+                            >Sign up</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </header>
     </body>
 </html>
