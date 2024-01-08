@@ -1280,6 +1280,7 @@ h6 {
     font-size: 1.2rem;
     line-height: 116.667%;
     text-align: center;
+    user-select: none;
 }
 
 .footer__form {
@@ -1344,6 +1345,13 @@ h6 {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background, color;
+    transition-duration: 0.3s;
+}
+
+.footer__social-item:hover {
+    background: #000958;
+    color: #fff;
 }
 
 .footer__right {
@@ -1359,6 +1367,7 @@ h6 {
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 111.111%;
+    user-select: none;
 }
 
 .footer__list {
@@ -1369,4 +1378,9 @@ h6 {
     color: #656689;
     font-size: 1.4rem;
     line-height: 200%;
+    transition: color 0.25s;
+}
+
+.footer__item:hover {
+    color: #000958;
 }
