@@ -1233,6 +1233,14 @@ h6 {
     background: #90ccff;
 }
 
+.blog__item:nth-child(2) .blog__item-img-wrap {
+    background: #ff997e;
+}
+
+.blog__item:nth-child(3) .blog__item-img-wrap {
+    background: #5bd6e2;
+}
+
 .blog__item-img {
     width: 100%;
     object-fit: cover;
