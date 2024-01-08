@@ -754,15 +754,124 @@ h6 {
     background: linear-gradient(180deg, #9df1fb 0%, #73d0db 108.14%);
 }
 
-.service-btn {
+.service-btn,
+.staff-btn {
     margin-top: 45px;
     min-width: 214px;
     color: #ff5b2e;
     border-color: #ff5b2e;
 }
 
-.service-btn:hover {
+.service-btn:hover,
+.staff-btn:hover {
     color: #fff;
     background: #ff5b2e;
     border-color: currentColor;
+}
+
+/* ================================================Staff================================================= */
+.staff {
+    padding: 130px 0;
+}
+
+.staff__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.staff__list {
+    margin-top: 59px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 35px;
+}
+.staff__item {
+    text-align: center;
+}
+
+.staff__item-img-wrap {
+    position: relative;
+    margin: 0 16px;
+    border-radius: 130px;
+}
+
+.staff__item-img {
+    position: relative;
+    width: 100%;
+    border-radius: inherit;
+    display: block;
+}
+
+.staff__item-img-wrap::before {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 94%;
+    border-radius: inherit;
+    background: linear-gradient(180deg, #90ccff 0%, #59a8eb 95.96%);
+}
+
+.staff__item-img-wrap::after {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    content: "";
+    width: calc(100% + 32px);
+    height: 100%;
+    background-image: url(../img/staff-decor-01.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+    transform: translateX(-50%);
+}
+
+.staff__item:nth-child(even) .staff__item-img-wrap::after {
+    background-position: 0 19px;
+}
+
+.staff__item:nth-child(2) .staff__item-img-wrap::before {
+    background: linear-gradient(180deg, #ff997e 0%, #f3752e 100%);
+}
+
+.staff__item:nth-child(2) .staff__item-img-wrap::after {
+    background-image: url(../img/staff-decor-02.svg);
+}
+
+.staff__item:nth-child(3) .staff__item-img-wrap::before {
+    background: linear-gradient(180deg, #fabf3e 0%, #ffa14a 100%);
+}
+
+.staff__item:nth-child(3) .staff__item-img-wrap::after {
+    background-image: url(../img/staff-decor-03.svg);
+}
+
+.staff__item:nth-child(4) .staff__item-img-wrap::before {
+    background: linear-gradient(180deg, #5bd6e2 0%, #00a7cc 100%);
+}
+
+.staff__item:nth-child(4) .staff__item-img-wrap::after {
+    background-image: url(../img/staff-decor-04.svg);
+}
+
+.staff__item-desc {
+    margin-top: 34px;
+    font-size: 1.4rem;
+    line-height: 100%;
+}
+
+.staff__item-name {
+    margin-top: 14px;
+    color: #000958;
+    font-family: Sora;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 100%;
+}
+
+.staff-btn {
+    min-width: 193px;
 }
