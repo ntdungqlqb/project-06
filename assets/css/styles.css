@@ -989,6 +989,7 @@ h6 {
     top: -10px;
     right: -110px;
     width: 87px;
+    z-index: 1;
 }
 
 .rates__list {
